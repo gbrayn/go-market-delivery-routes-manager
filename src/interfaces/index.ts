@@ -1,10 +1,11 @@
 export interface Delivery {
-  id: string;
+  _id: string;
   name: string;
   address: string;
   complement: string;
   latitude: number;
   longitude: number;
+  status: 'open' | 'in progress' | 'closed';
 }
 
 export type Position = {
